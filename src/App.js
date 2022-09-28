@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ConnectModal from "./components/ConnectModal";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth, db } from "./utils/firebase.config";
+import { auth } from "./utils/firebase.config";
 import CreatePost from "./components/CreatePost";
-import { collection, getDocs } from "firebase/firestore";
 import Post from "./components/Post";
 import { useDispatch, useSelector } from "react-redux";
 import { getPosts } from "./actions/post.action";
